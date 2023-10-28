@@ -1,0 +1,47 @@
+.post {
+  border-radius: 196px;
+  padding: 14px 64px;
+  background-color: var(--accent-2);
+  transition: background-color var(--ui-transition) ease;
+
+  &__title {
+    margin-bottom: 14px;
+
+    a {
+      margin-bottom: 14px;
+      font-size: 24px;
+      line-height: 28px;
+      color: var(--white);
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 125%;
+      }
+    }
+
+    @include mobile {
+      margin: 0;
+    }
+  }
+
+  &__date {
+    font-family: var(--second-family);
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--white-3);
+  }
+
+  &:active {
+    background-color: var(--second);
+  }
+
+  @include mobile {
+    border-radius: 40px;
+    padding: 14px 30px;
+  }
+
+  @include hover {
+    background-color: var(--second);
+  }
+}

@@ -1,0 +1,45 @@
+.footer {
+  position: relative;
+  border-top: 4px solid var(--second);
+  border-right: 4px solid var(--second);
+  border-left: 4px solid var(--second);
+  border-radius: 64px 64px 0 0;
+  padding: 35px 38px 24px;
+  background-color: var(--accent-2);
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__list {
+    flex-wrap: wrap;
+    max-width: 600px;
+    gap: 40px;
+
+    @include small-desktop {
+      gap: 25px;
+    }
+
+    @include tablet {
+      gap: 2px;
+    }
+  }
+
+  &__nav-link {
+    @include tablet {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+    }
+  }
+
+  @include mobile {
+    border-width: 2px;
+    border-radius: 50px 50px 0 0;
+    padding: 20px 8px;
+  }
+}

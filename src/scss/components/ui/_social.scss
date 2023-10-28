@@ -1,0 +1,67 @@
+.social {
+  max-width: 315px;
+
+  &__accent {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: var(--white);
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 143%;
+      text-align: left;
+    }
+
+    @include mobile {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__link {
+    svg {
+      stop {
+        stop-color: var(--second);
+        transition: stop-color var(--ui-transition) ease;
+      }
+
+      path {
+        transition: fill var(--ui-transition) ease;
+      }
+
+      &:active {
+        stop[offset] {
+          stop-color: #9dadf2;
+        }
+
+        path:last-child {
+          fill: #1e1231;
+        }
+      }
+
+      @include mobile {
+        width: 27px;
+        height: 27px;
+      }
+
+      @include hover {
+        stop[offset] {
+          stop-color: #9dadf2;
+        }
+
+        path:last-child {
+          fill: #1e1231;
+        }
+      }
+    }
+  }
+}

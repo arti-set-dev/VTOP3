@@ -1,0 +1,19 @@
+.btn-accent {
+  border-radius: 24px;
+  padding: 14px 19px;
+  max-width: fit-content;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--second);
+  transition: background-color var(--ui-transition) ease;
+
+  &:active {
+    background-color: var(--second-3);
+  }
+
+  @include hover {
+    background-color: var(--second-3);
+  }
+}

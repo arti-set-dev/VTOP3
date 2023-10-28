@@ -1,0 +1,22 @@
+.btn-border {
+  border: 2px solid var(--second-2);
+  border-radius: 24px;
+  padding: 12px;
+  max-width: fit-content;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: background-color var(--ui-transition) ease, border var(--ui-transition) ease;
+
+  &:active {
+    border: 2px solid var(--second-3);
+    background-color: var(--second-3);
+  }
+
+  @include hover {
+    border: 2px solid var(--second-3);
+    background-color: var(--second-3);
+  }
+}

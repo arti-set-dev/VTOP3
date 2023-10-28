@@ -1,0 +1,23 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Lexend", sans-serif;
+  --second-family: "Futura PT", sans-serif;
+  --third-family: "Indie Flower", sans-serif;
+  --content-width: 1640px;
+  --container-offset: 10px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --ui-transition: 0.3s;
+
+  // colors
+  --white: #fff;
+  --white-2: rgb(255 255 255 / 12%);
+  --white-3: rgb(255 255 255 / 60%);
+  --accent: #110a1d;
+  --accent-2: #1e1231;
+  --second: #478bf9;
+  --second-2: #9dadf2;
+  --second-3: #3675da;
+  --second-4: #7ddacf;
+}

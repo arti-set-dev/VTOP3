@@ -1,0 +1,19 @@
+.burger {
+  display: none;
+
+  @include tablet {
+    @include burger;
+
+    /* stylelint-disable-next-line order/order */
+    --burger-height: 22px;
+
+    display: block;
+    border-radius: 8px;
+    color: var(--white);
+  }
+
+  @include mobile {
+    --burger-height: 15px;
+    --burger-width: 23px;
+  }
+}

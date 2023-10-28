@@ -1,0 +1,27 @@
+.nav {
+  &__list {
+    display: flex;
+    gap: 32px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+
+    &--active {
+      text-decoration: underline;
+      color: var(--second-3);
+
+      @include tablet {
+        text-decoration: none;
+        color: var(--white);
+      }
+    }
+  }
+}

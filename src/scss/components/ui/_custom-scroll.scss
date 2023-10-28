@@ -1,0 +1,27 @@
+.simplebar-track.simplebar-vertical {
+  right: 13px;
+  top: 50%;
+  border-radius: 10px;
+  width: 8px;
+  height: 69%;
+  background: rgb(255 255 255 / 12%);
+  transform: translateY(-50%);
+
+  @include mobile {
+    right: 4px;
+    width: 4px;
+    height: 72%;
+  }
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+  left: 0;
+  border-radius: 10px;
+  width: 100%;
+  background: var(--second-3);
+  opacity: 1;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+  top: 0;
+}

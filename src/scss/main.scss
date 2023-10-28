@@ -1,0 +1,22 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// ui
+@import "./components/ui/nav";
+@import "./components/ui/btn-border";
+@import "./components/ui/select";
+@import "./components/ui/btn-accent";
+@import "./components/ui/post";
+@import "./components/ui/social";
+@import "./components/ui/chips";
+@import "./components/ui/custom-scroll";
+@import "./components/ui/burger";
+
+// подключения компонентов страницы
+@import "./components/partials/header";
+@import "./components/partials/home-page";
+@import "./components/partials/blog";
+@import "./components/partials/footer";
